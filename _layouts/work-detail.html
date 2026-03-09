@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="split-detail-layout">
+    <div class="image-scroll-section">
+        <div class="centered-image-stack">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+            
+            {% if page.extra_images %}
+                {% for extra in page.extra_images %}
+                    <img src="{{ extra | relative_url }}" alt="Detail of {{ page.title }}">
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    <aside class="details-sidebar">
+        <div class="details-content">
+            <h1>{{ page.title }}</h1>
+            <div class="description">
+                {{ content }}
+            </div>
+            <a href="/" class="back-btn">← Back to Projects</a>
+        </div>
+    </aside>
+</div>
+

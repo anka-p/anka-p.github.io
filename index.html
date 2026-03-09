@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="gallery-grid">
+  {% for work in site.works %}
+    <a href="{{ work.url | relative_url }}" class="gallery-item">
+      <img src="{{ work.image | relative_url }}" alt="{{ work.title }}">
+      <div class="gallery-overlay">
+        <h3>{{ work.title }}</h3>
+        <p>{{ work.description }} </p>
+      </div>
+    </a>
+  {% endfor %}
+</div>

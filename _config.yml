@@ -1,0 +1,9 @@
+title: ANKA PRIYA
+description: Lover of synbols
+baseurl: "" 
+url: ""
+
+collections:
+  works:
+    output: true
+    permalink: /works/:path/
