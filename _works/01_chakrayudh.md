@@ -1,9 +1,9 @@
 ---
 layout: work-detail
-title: "Chakrayudh"
+title: "Chakravyuh"
 description: "A piece inspired by repitation and rythm."
-image: "/assets/images/01_chakrayudh.jpeg"
-medium: "Ink on Paper"
+image: "/assets/images/01_chakravyuh.jpeg"
+medium: "Pencil on Paper"
 dimensions: "12 x 12 inches"
 year: "2024"
 ---

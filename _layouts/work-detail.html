@@ -6,22 +6,81 @@ layout: default
         <div class="centered-image-stack">
             <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
             
-            {% if page.extra_images %}
-                {% for extra in page.extra_images %}
-                    <img src="{{ extra | relative_url }}" alt="Detail of {{ page.title }}">
-                {% endfor %}
-            {% endif %}
+            {% for extra in page.extra_images %}
+                <img src="{{ extra | relative_url }}" alt="{{ page.title }} detail">
+            {% endfor %}
         </div>
     </div>
 
-    <aside class="details-sidebar">
+     <aside class="details-sidebar">
         <div class="details-content">
-            <h1>{{ page.title }}</h1>
+            <h1 class="detail-title">{{ page.title }}</h1>
+            
+            <div class="detail-tags">
+                {% if page.medium %}<span>{{ page.medium }}</span>{% endif %}
+                {% if page.year %}<span>{{ page.year }}</span>{% endif %}
+            </div>
+
             <div class="description">
                 {{ content }}
             </div>
-            <a href="/" class="back-btn">← Back to Projects</a>
+
+            <a href="{{ '/' | relative_url }}" class="back-btn">
+                <i data-lucide="arrow-left"></i> 
+                <span>Back to Gallery</span>
+            </a>
         </div>
     </aside>
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+    <!-- <div class="next-project-nav">
+        {% if page.previous.url %}
+            <a href="{{ page.previous.url | relative_url }}" class="nav-link prev">
+                <small>Previous</small>
+                <span>{{ page.previous.title }}</span>
+            </a>
+        {% endif %}
+        
+        {% if page.next.url %}
+            <a href="{{ page.next.url | relative_url }}" class="nav-link next">
+                <small>Next</small>
+                <span>{{ page.next.title }}</span>
+            </a>
+        {% endif %}
+    </div> -->
 </div>
 
+<script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
+
+    // Select all images in your detail stack
+    document.querySelectorAll(".centered-image-stack img").forEach(img => {
+        img.onclick = function() {
+            lightbox.style.display = "flex";
+            lightbox.style.alignItems = "center";
+            lightboxImg.src = this.src;
+        }
+    });
+
+    // Close when clicking the 'X'
+    closeBtn.onclick = function() {
+        lightbox.style.display = "none";
+    }
+
+    // Close when clicking anywhere outside the image
+    lightbox.onclick = function(e) {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = "none";
+        }
+    }
+    
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") lightbox.style.display = "none";
+    });
+</script>
