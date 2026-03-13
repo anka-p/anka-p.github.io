@@ -1,13 +1,13 @@
 ---
 layout: work-detail
-title: "Chakrayudh"
+title: "No face sees all"
 description: "A piece inspired by repitation and rythm."
-image: "/assets/images/05_nature.jpg"
-medium: "Mixed Media on Paper"
+image: "/assets/images/no_face.jpg"
+medium: "Ink on Paper"
 dimensions: "12 x 12 inches"
-year: "2017"
+year: "2024"
 sidebar_view_enabled: false
 
 ---
 
-something someething
+A collection of headshot doodles.

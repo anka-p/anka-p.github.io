@@ -12,7 +12,8 @@
     <header class="main-header">
         <div class="header-container">
             <div class="brand">
-                <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+                <h1><a href="{{ '/' | relative_url }}">{{ site.title_beng }}</a></h1>
+                <p class="subtitle">{{ site.description }}</p>
             </div>
 
             <nav class="top-nav">
@@ -35,6 +36,9 @@
     <main class="content">
         {{ content }}
     </main>
+    <footer class="about-footer">
+        <p>© 2026 Archive. All rights reserved. Built with patience and pixels.</p>
+    </footer>
 
     <button id="scroll-to-top" aria-label="Scroll to top">
         <i data-lucide="arrow-up"></i>

@@ -34,27 +34,100 @@
     </header>
 
     <main class="content">
-        <div class="contact-container">
-    <h2>Get in Touch</h2>
-    <p>For inquiries regarding specific pieces, commissions, or collaborations, please use the form below.</p>
+        <div id="detail-interface" class="">
+    
+    <main class="unified-art-layout">
+        <div class="centered-image-stack">
+            <img src="/assets/images/01_chakravyuh.jpeg" alt="Chakravyuh">
+            
+            
+        </div>
+    </main>
 
-    <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" name="name" required="" />
+    <button id="sidebar-toggle" aria-label="Toggle Details">
+        <i data-lucide="chevron-right" id="toggle-icon"></i>
+    </button>
+
+    <aside class="details-sidebar">
+        <div class="details-content">
+            <h1 class="detail-title">Chakravyuh</h1>
+            
+            <div class="detail-tags">
+                <span>Pencil on Paper</span>
+                <span>2024</span>
+            </div>
+
+            <div class="description">
+                <p>I. Composition and Visual Rhythm
+The composition is built upon a complex visual rhythm created through the repetition of organic, flowing lines. These gestural marks guide the viewer’s eye across the picture plane, creating a sense of dynamic movement and flow. The arrangement of forms suggests a flowing repetition, reminiscent of natural growth or atmospheric phenomena.</p>
+
+<p>II. Chromatic Strategy
+Central to the work is a saturated, high-chroma palette. By juxtaposing complementary hues, the artist creates a sense of chromatic tension and optical vibrancy. The use of layered pigments adds significant spatial depth, transforming the two-dimensional surface into a recessive, three-dimensional space. The progressive rhythm of color—moving from intense, undiluted tones to subtle, mixed values—evokes a specific emotional or meditative state.</p>
+
+<p>III. Technique and Materiality
+The work emphasizes the materiality of the traditional medium through expressive, visible brushwork. Techniques such as impasto create a tactile surface texture that serves as a physical record of the creative process. This emphasis on the “hand of the artist” bridges the gap between representational form and abstract expression.</p>
+
+            </div>
+
+            <a href="/" class="back-btn">
+                <i data-lucide="arrow-left"></i> 
+                <span>Back to Gallery</span>
+            </a>
         </div>
-        <div class="form-group">
-            <label>Email</label>
-            <input type="email" name="_replyto" required="" />
-        </div>
-        <div class="form-group">
-            <label>Message</label>
-            <textarea name="message" rows="5" required=""></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-    </form>
+    </aside>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const layout = document.getElementById('detail-interface');
+        const toggleBtn = document.getElementById('sidebar-toggle');
+
+        if (toggleBtn && layout) {
+            toggleBtn.addEventListener('click', () => {
+                layout.classList.toggle('sidebar-hidden');
+            });
+        }
+    });
+</script>
+
+<script>
+    // code for lightbox
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
+
+    // Select all images in your detail stack
+    document.querySelectorAll(".centered-image-stack img").forEach(img => {
+        img.onclick = function() {
+            lightbox.style.display = "flex";
+            lightbox.style.alignItems = "center";
+            lightboxImg.src = this.src;
+        }
+    });
+
+    // Close when clicking the 'X'
+    closeBtn.onclick = function() {
+        lightbox.style.display = "none";
+    }
+
+    // Close when clicking anywhere outside the image
+    lightbox.onclick = function(e) {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = "none";
+        }
+    }
+    
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") lightbox.style.display = "none";
+    });
+</script>
     </main>
     <footer class="about-footer">
         <p>© 2026 Archive. All rights reserved. Built with patience and pixels.</p>

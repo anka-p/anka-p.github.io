@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANKA PRIYA</title>
+    <title>Anka Priya</title>
     <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&family=Noto+Sans+Bengali:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -12,7 +12,8 @@
     <header class="main-header">
         <div class="header-container">
             <div class="brand">
-                <h1><a href="/">ANKA PRIYA</a></h1>
+                <h1><a href="/">অঙ্ক প্রিয়</a></h1>
+                <p class="subtitle">Lover of symbols; An archive of process and unfinished works</p>
             </div>
 
             <nav class="top-nav">
@@ -33,22 +34,27 @@
     </header>
 
     <main class="content">
-        <div class="split-detail-layout">
-    <div class="image-scroll-section">
+        <div id="detail-interface" class="sidebar-hidden">
+    
+    <main class="unified-art-layout">
         <div class="centered-image-stack">
             <img src="/assets/images/05_nature.jpg" alt="Chakrayudh">
             
             
         </div>
-    </div>
+    </main>
 
-     <aside class="details-sidebar">
+    <button id="sidebar-toggle" aria-label="Toggle Details">
+        <i data-lucide="chevron-right" id="toggle-icon"></i>
+    </button>
+
+    <aside class="details-sidebar">
         <div class="details-content">
             <h1 class="detail-title">Chakrayudh</h1>
             
             <div class="detail-tags">
-                <span>Ink on Paper</span>
-                <span>2024</span>
+                <span>Mixed Media on Paper</span>
+                <span>2017</span>
             </div>
 
             <div class="description">
@@ -62,24 +68,29 @@
             </a>
         </div>
     </aside>
+
     <div id="lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
         <img class="lightbox-content" id="lightbox-img">
         <div id="lightbox-caption"></div>
     </div>
-    <!-- <div class="next-project-nav">
-        
-            <a href="/works/04/" class="nav-link prev">
-                <small>Previous</small>
-                <span>panorama</span>
-            </a>
-        
-        
-        
-    </div> -->
 </div>
 
 <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const layout = document.getElementById('detail-interface');
+        const toggleBtn = document.getElementById('sidebar-toggle');
+
+        if (toggleBtn && layout) {
+            toggleBtn.addEventListener('click', () => {
+                layout.classList.toggle('sidebar-hidden');
+            });
+        }
+    });
+</script>
+
+<script>
+    // code for lightbox
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
     const closeBtn = document.querySelector(".lightbox-close");
@@ -111,6 +122,9 @@
     });
 </script>
     </main>
+    <footer class="about-footer">
+        <p>© 2026 Archive. All rights reserved. Built with patience and pixels.</p>
+    </footer>
 
     <button id="scroll-to-top" aria-label="Scroll to top">
         <i data-lucide="arrow-up"></i>

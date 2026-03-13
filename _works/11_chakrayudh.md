@@ -6,6 +6,8 @@ image: "/assets/images/01_chakravyuh.jpeg"
 medium: "Pencil on Paper"
 dimensions: "12 x 12 inches"
 year: "2024"
+sidebar_view_enabled: "true"
+
 ---
 
 I. Composition and Visual Rhythm
