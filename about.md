@@ -8,7 +8,7 @@ permalink: /about/
 
   <section class="about-main">
     <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&auto=format&fit=crop" alt="Me">
+        <img src="/assets/images/about.JPG" alt="Me">
     </div>
     
   <div class="about-content">
@@ -24,6 +24,7 @@ permalink: /about/
           <li>Staring into the void </li>
           <li>Trying to remember why</li>
           <li>Turning caffeine into doodles</li>
+          <li>Screaming into the void </li>
       </ul>
   </div>
   <div class="content-block">
