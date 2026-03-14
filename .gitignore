@@ -1,1 +1,8 @@
+# Jekyll Defaults
+_site/
+.jekyll-cache/
+
+# OS Metadata
 .DS_Store
+Thumbs.db
+
