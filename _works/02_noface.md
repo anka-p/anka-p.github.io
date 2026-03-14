@@ -10,4 +10,4 @@ sidebar_view_enabled: false
 
 ---
 
-A collection of headshot doodles.
+No face. All eyes.

@@ -1,7 +1,7 @@
 ---
 layout: work-detail
-title: "Heashots"
-description: "A piece inspired by repitation and rythm."
+title: "Headshots"
+description: "some face doodles from gere and there"
 image: "/assets/images/02_headshot.jpg"
 medium: "Ink on Paper"
 dimensions: "12 x 12 inches"

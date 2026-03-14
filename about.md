@@ -8,13 +8,13 @@ permalink: /about/
 
   <section class="about-main">
     <div class="about-image">
-        <img src="/assets/images/about.JPG" alt="Me">
+        <img src="/assets/images/about/about.JPG" alt="Me">
     </div>
     
   <div class="about-content">
   <div class="content-block">
       <h3>The Manifest-ish</h3>
-      <p>Life is a relentless grind towards the inevitable, so I thought আমি আঁকতে পারি while I wait. This space is a high-definition dump of my brain—ranging from polished vanity projects to the 2 AM doodles that keep the existential dread at bay.</p>
+      <p>Life is a relentless grind towards the inevitable, so I thought আমি আঁকতে পারি while I wait. This space is a high-definition dump of my brain—ranging from vanity projects to 2 AM doodles that keep the existential dread at bay.</p>
   </div>
 
   <div class="content-block">
