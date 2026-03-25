@@ -14,22 +14,17 @@ permalink: /about/
   <div class="about-content">
   <div class="content-block">
       <h3>The Manifest-ish</h3>
-      <p>Life is a relentless grind towards the inevitable, so I thought আমি আঁকতে পারি while I wait. This space is a high-definition dump of my brain—ranging from vanity projects to 2 AM doodles that keep the existential dread at bay.</p>
+      <p>Life is a grind. It is a soup of what was and what could have been and as a person with a limited attention span, the present has a tendency of getting away from me.</p>
+      <p>This space is to present the present - or is it to present the past to my future self but if i am presenting the past to my future then is the future my present?...</p>
+      <p>Anyways... this is going to be a dump of my brain — ranging from half-assed projects of passion to random projections of emotions I couldnt project in real life. I will aim to maintain an archive of things I dabble in here and there that keep my existential dread at bay long enough to maybe muster in a moment of just ...being, basically all the hijibiji that makes my life mine.</p>
   </div>
 
-  <div class="content-block">
-      <h3>The Grind</h3>
-      <ul class="clean-list">
-          <li>Synthesizing beauty from the mundane chaos</li>
-          <li>Staring into the void </li>
-          <li>Trying to remember why</li>
-          <li>Turning caffeine into doodles</li>
-          <li>Screaming into the void </li>
-      </ul>
-  </div>
+
   <div class="content-block">
                 <h3>Contact</h3>
-                <p> Shout into the my void. I'm usually available between my third coffee and my first crisis.</p>
+                <p>If you're lost enough to find yourself here, might as well 
+                  <a href="mailto:your@email.com" class="glitch-link" data-text="shout into my void">leave a piece of your mind</a> at my void.
+                </p>
             </div>
   <p class="dread-footer">System Status: Operational. Spirit Status: [REDACTED].</p>
   </div>
@@ -38,7 +33,4 @@ permalink: /about/
 </div>
 
 
-
-
-<!-- <p>I turn caffeine into sketches and daydreams into pixels. Based in the chaotic beauty of Bengal, I live for messy brushstrokes and clean code.</p> -->
 

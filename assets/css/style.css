@@ -476,26 +476,47 @@ a { text-decoration: none; color: inherit; }
     color: var(--text-color);
 }
 
-.clean-list {
-    list-style: none;
-    padding: 0;
-}
-
-.clean-list li {
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-    color: var(--secondary-text);
-}
-
-.clean-list li::before {
-    content: "—"; /* Elegant em-dash instead of bullets */
-    margin-right: 10px;
-}
-
 .dread-footer {
     text-align: center;
     font-size: 0.6rem;
     opacity: 0.3;
     margin-top: 50px;
     letter-spacing: 1px;
+}
+
+/* --- THE MINIMALIST VOID FOG --- */
+
+.glitch-link {
+    position: relative;
+    display: inline-block;
+    color: #000 !important; /* Keep it sharp black */
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease; /* Smooth entry */
+}
+
+.glitch-link:hover {
+    /* Subtle letter spacing expansion makes it feel like it's "breathing" */
+    letter-spacing: 2px;
+    /* Soft shadow that looks like digital fog */
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    color: #444 !important; /* Soften the text color */
+}
+
+/* Optional: Add a very thin, elegant underline that grows from the center */
+.glitch-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 50%;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+.glitch-link:hover::after {
+    width: 100%;
+    left: 0;
 }
