@@ -67,7 +67,6 @@ a { text-decoration: none; color: inherit; }
     color: var(--secondary-text);
 }
 
-
 .top-nav {
     display: flex;
     align-items: center;

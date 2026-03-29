@@ -1,6 +1,6 @@
 ---
 layout: work-detail
-title: "panorama"
+title: "hosto-shilpo"
 description: "A piece inspired by repitation and rythm."
 image: "/assets/images/hands/blue.jpeg"
 medium: "Acrylic on Canvas"

@@ -1,6 +1,6 @@
 title: Anka Priya
 title_beng: অঙ্ক প্রিয়
-description: Lover of symbols; An archive of process and unfinished works
+description: Lover of symbols; An archive of whimsy and hijibiji
 baseurl: "" 
 url: ""
 
@@ -8,3 +8,6 @@ collections:
   works:
     output: true
     permalink: /works/:path/
+  hijibiji:        # The name of your new tab
+    output: true
+    permalink: /hijibiji/:name

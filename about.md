@@ -23,10 +23,10 @@ permalink: /about/
   <div class="content-block">
                 <h3>Contact</h3>
                 <p>If you're lost enough to find yourself here, might as well 
-                  <a href="mailto:your@email.com" class="glitch-link" data-text="shout into my void">leave a piece of your mind</a> at my void.
+                  <a href="mailto:your@email.com" class="glitch-link" data-text="shout into the void">leave a piece of your mind</a> .
                 </p>
             </div>
-  <p class="dread-footer">System Status: Operational. Spirit Status: [REDACTED].</p>
+  <p class="dread-footer">System : Operational. Spirit : [REDACTED].</p>
   </div>
   </section>
 
